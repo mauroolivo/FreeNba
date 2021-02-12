@@ -3,13 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		346D302425D721CC0076059C /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 346D302325D721CC0076059C /* PromiseKit */; };
+		346D303225D722430076059C /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D302D25D722430076059C /* EndPoint.swift */; };
+		346D303325D722430076059C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D302E25D722430076059C /* Service.swift */; };
+		346D303425D722430076059C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D302F25D722430076059C /* Api.swift */; };
+		346D303525D722430076059C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D303025D722430076059C /* Extensions.swift */; };
+		346D303625D722430076059C /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D303125D722430076059C /* HTTPMethod.swift */; };
+		346D303B25D7227A0076059C /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D303A25D7227A0076059C /* ApiConfig.swift */; };
+		346D304125D7244E0076059C /* ResponseTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D304025D7244E0076059C /* ResponseTeams.swift */; };
+		346D304B25D7297F0076059C /* ResponsePlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D304A25D7297F0076059C /* ResponsePlayers.swift */; };
 		34F3259B25D6FB3200E92E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3259A25D6FB3200E92E2D /* AppDelegate.swift */; };
 		34F3259D25D6FB3200E92E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3259C25D6FB3200E92E2D /* SceneDelegate.swift */; };
-		34F3259F25D6FB3200E92E2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3259E25D6FB3200E92E2D /* ViewController.swift */; };
+		34F3259F25D6FB3200E92E2D /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3259E25D6FB3200E92E2D /* TeamsViewController.swift */; };
 		34F325A225D6FB3200E92E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F325A025D6FB3200E92E2D /* Main.storyboard */; };
 		34F325A425D6FB3500E92E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F325A325D6FB3500E92E2D /* Assets.xcassets */; };
 		34F325A725D6FB3500E92E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F325A525D6FB3500E92E2D /* LaunchScreen.storyboard */; };
@@ -35,10 +44,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		346D302D25D722430076059C /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		346D302E25D722430076059C /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		346D302F25D722430076059C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		346D303025D722430076059C /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		346D303125D722430076059C /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		346D303A25D7227A0076059C /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		346D304025D7244E0076059C /* ResponseTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTeams.swift; sourceTree = "<group>"; };
+		346D304A25D7297F0076059C /* ResponsePlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePlayers.swift; sourceTree = "<group>"; };
 		34F3259725D6FB3200E92E2D /* FreeNba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeNba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F3259A25D6FB3200E92E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34F3259C25D6FB3200E92E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34F3259E25D6FB3200E92E2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34F3259E25D6FB3200E92E2D /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		34F325A125D6FB3200E92E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34F325A325D6FB3500E92E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34F325A625D6FB3500E92E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346D302425D721CC0076059C /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +94,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		346D302825D721DE0076059C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				346D302F25D722430076059C /* Api.swift */,
+				346D302D25D722430076059C /* EndPoint.swift */,
+				346D303025D722430076059C /* Extensions.swift */,
+				346D303125D722430076059C /* HTTPMethod.swift */,
+				346D302E25D722430076059C /* Service.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		346D302925D721ED0076059C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				346D304025D7244E0076059C /* ResponseTeams.swift */,
+				346D304A25D7297F0076059C /* ResponsePlayers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		346D302A25D722040076059C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				346D303A25D7227A0076059C /* ApiConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		346D302B25D7220C0076059C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		34F3258E25D6FB3200E92E2D = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +153,13 @@
 		34F3259925D6FB3200E92E2D /* FreeNba */ = {
 			isa = PBXGroup;
 			children = (
+				346D302825D721DE0076059C /* Networking */,
+				346D302925D721ED0076059C /* Models */,
+				346D302A25D722040076059C /* Config */,
+				346D302B25D7220C0076059C /* Views */,
 				34F3259A25D6FB3200E92E2D /* AppDelegate.swift */,
 				34F3259C25D6FB3200E92E2D /* SceneDelegate.swift */,
-				34F3259E25D6FB3200E92E2D /* ViewController.swift */,
+				34F3259E25D6FB3200E92E2D /* TeamsViewController.swift */,
 				34F325A025D6FB3200E92E2D /* Main.storyboard */,
 				34F325A325D6FB3500E92E2D /* Assets.xcassets */,
 				34F325A525D6FB3500E92E2D /* LaunchScreen.storyboard */,
@@ -144,6 +202,9 @@
 			dependencies = (
 			);
 			name = FreeNba;
+			packageProductDependencies = (
+				346D302325D721CC0076059C /* PromiseKit */,
+			);
 			productName = FreeNba;
 			productReference = 34F3259725D6FB3200E92E2D /* FreeNba.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +276,9 @@
 				Base,
 			);
 			mainGroup = 34F3258E25D6FB3200E92E2D;
+			packageReferences = (
+				346D302225D721CC0076059C /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = 34F3259825D6FB3200E92E2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34F3259F25D6FB3200E92E2D /* ViewController.swift in Sources */,
+				346D303425D722430076059C /* Api.swift in Sources */,
+				346D304125D7244E0076059C /* ResponseTeams.swift in Sources */,
+				34F3259F25D6FB3200E92E2D /* TeamsViewController.swift in Sources */,
 				34F3259B25D6FB3200E92E2D /* AppDelegate.swift in Sources */,
+				346D303325D722430076059C /* Service.swift in Sources */,
+				346D303625D722430076059C /* HTTPMethod.swift in Sources */,
+				346D304B25D7297F0076059C /* ResponsePlayers.swift in Sources */,
+				346D303225D722430076059C /* EndPoint.swift in Sources */,
 				34F3259D25D6FB3200E92E2D /* SceneDelegate.swift in Sources */,
+				346D303525D722430076059C /* Extensions.swift in Sources */,
+				346D303B25D7227A0076059C /* ApiConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +665,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		346D302225D721CC0076059C /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.13.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		346D302325D721CC0076059C /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 346D302225D721CC0076059C /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 34F3258F25D6FB3200E92E2D /* Project object */;
 }
