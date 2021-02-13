@@ -13,6 +13,14 @@ class PlayerViewController: UIViewController, Storyboardable {
     static var storyboardType: StoryboardType = .main
     var service = Service()
     weak var coordinator: MainCoordinator?
+    var playerId: Int?
+    var player: Player?
+    
+    
+    @IBOutlet weak var lblFirst: UILabel!
+    @IBOutlet weak var lblLast: UILabel!
+    @IBOutlet weak var lblPosition: UILabel!
+    @IBOutlet weak var lblTeam: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,26 +31,24 @@ class PlayerViewController: UIViewController, Storyboardable {
 
     func call() {
 
-//        service.execute(TeamsEndPoint())
-//            .done { (result: ResponseTeams) in
-//                print(result)
-//            }.catch {(error: Error) in
-//                print(error)
-//            }
+        guard let id = playerId else { return }
         
-//        service.execute(PlayersEndPoint())
-//            .done { (result: ResponsePlayers) in
-//                print(result)
-//            }.catch {(error: Error) in
-//                print(error)
-//            }
+        service.execute(PlayerEndPoint(id))
+            .done { [weak self] (result: Player) in
+                self?.player = result
+                self?.reload()
+                print(result)
+            }.catch {(error: Error) in
+                print(error)
+            }
         
-//        service.execute(PlayerEndPoint("3"))
-//            .done { (result: Player) in
-//                print(result)
-//            }.catch {(error: Error) in
-//                print(error)
-//            }
+    }
+    
+    func reload() {
+        lblFirst.text = player?.firstName ?? ""
+        lblLast.text = player?.lastName ?? ""
+        lblPosition.text = "Position: \(player?.position ?? "")"
+        lblTeam.text = "Team: \(player?.team?.fullName ?? "")"
         
     }
 }

@@ -25,9 +25,10 @@ extension MainCoordinator {
         push(vc)
     }
     
-    func showPlayer() {
+    func showPlayer(_ id: Int) {
         let vc = PlayerViewController.instantiate()
         vc.coordinator = self
+        vc.playerId = id
         push(vc)
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3435070525D7B714004F8E37 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435070425D7B714004F8E37 /* TeamCell.swift */; };
 		346D302425D721CC0076059C /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 346D302325D721CC0076059C /* PromiseKit */; };
 		346D303225D722430076059C /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D302D25D722430076059C /* EndPoint.swift */; };
 		346D303325D722430076059C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D302E25D722430076059C /* Service.swift */; };
@@ -30,6 +31,7 @@
 		34F325A725D6FB3500E92E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F325A525D6FB3500E92E2D /* LaunchScreen.storyboard */; };
 		34F325B225D6FB3500E92E2D /* FreeNbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F325B125D6FB3500E92E2D /* FreeNbaTests.swift */; };
 		34F325BD25D6FB3500E92E2D /* FreeNbaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F325BC25D6FB3500E92E2D /* FreeNbaUITests.swift */; };
+		34F5991125D7C2F200093CFC /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F5991025D7C2F200093CFC /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3435070425D7B714004F8E37 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
 		346D302D25D722430076059C /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		346D302E25D722430076059C /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		346D302F25D722430076059C /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		34F325B825D6FB3500E92E2D /* FreeNbaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNbaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F325BC25D6FB3500E92E2D /* FreeNbaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNbaUITests.swift; sourceTree = "<group>"; };
 		34F325BE25D6FB3500E92E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F5991025D7C2F200093CFC /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,8 @@
 		346D302B25D7220C0076059C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3435070425D7B714004F8E37 /* TeamCell.swift */,
+				34F5991025D7C2F200093CFC /* PlayerCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				346D306225D7AE410076059C /* StoryboardType.swift in Sources */,
+				34F5991125D7C2F200093CFC /* PlayerCell.swift in Sources */,
 				346D303425D722430076059C /* Api.swift in Sources */,
 				346D305525D7AD780076059C /* MainCoordinator.swift in Sources */,
 				346D305D25D7AE080076059C /* Storyboardable.swift in Sources */,
@@ -372,6 +379,7 @@
 				346D306825D7B4490076059C /* PlayersViewController.swift in Sources */,
 				346D304125D7244E0076059C /* ResponseTeams.swift in Sources */,
 				34F3259F25D6FB3200E92E2D /* TeamsViewController.swift in Sources */,
+				3435070525D7B714004F8E37 /* TeamCell.swift in Sources */,
 				34F3259B25D6FB3200E92E2D /* AppDelegate.swift in Sources */,
 				346D303325D722430076059C /* Service.swift in Sources */,
 				346D303625D722430076059C /* HTTPMethod.swift in Sources */,

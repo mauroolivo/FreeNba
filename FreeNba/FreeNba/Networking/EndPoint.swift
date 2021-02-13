@@ -61,7 +61,7 @@ struct PlayerEndPoint: EndPoint {
     var headers: HTTPHeaders?
     var urlParams: Parameters?
 
-    init(_ id: String) {
+    init(_ id: Int) {
         self.path = "\(path)/\(id)"
     }
     
