@@ -11,14 +11,27 @@
         <!--Teams View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TeamsViewController" customModule="FreeNba" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeamsViewController" id="BYZ-38-t0r" customClass="TeamsViewController" customModule="FreeNba" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gw3-o0-y6R">
+                                <rect key="frame" x="184" y="229" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BtG-aw-jYn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gkG-MN-bgL"/>
+                    <connections>
+                        <segue destination="xTy-6d-pW4" kind="show" id="Rfu-du-QFE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,6 +54,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4u-9J-lSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2.8985507246376816" y="75"/>
+        </scene>
+        <!--Players View Controller-->
+        <scene sceneID="bCH-CV-M75">
+            <objects>
+                <viewController storyboardIdentifier="PlayersViewController" id="xTy-6d-pW4" customClass="PlayersViewController" customModule="FreeNba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7hz-9l-3Wc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDJ-yx-XHa">
+                                <rect key="frame" x="191" y="236" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn:" destination="xTy-6d-pW4" eventType="touchUpInside" id="EOh-jN-hg4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iuh-2S-vGV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mTS-yL-cQ1"/>
+                    <connections>
+                        <segue destination="Msy-sS-6gE" kind="show" id="vfT-GU-Wgs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxz-fP-clx" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="75"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="bVR-My-hPR">
+            <objects>
+                <viewController storyboardIdentifier="PlayerViewController" id="Msy-sS-6gE" customClass="PlayerViewController" customModule="FreeNba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lX8-wP-rcM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QKq-Hh-ncx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LZr-YJ-8wZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jSZ-39-LVl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2243" y="75"/>
         </scene>
     </scenes>
     <resources>

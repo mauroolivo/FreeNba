@@ -1,16 +1,18 @@
 //
-//  ViewController.swift
+//  PlayersViewController.swift
 //  FreeNba
 //
-//  Created by Mauro Olivo on 12/02/21.
+//  Created by Mauro Olivo on 13/02/21.
 //
 
 import UIKit
 import PromiseKit
 
-class TeamsViewController: UIViewController {
+class PlayersViewController: UIViewController, Storyboardable {
 
+    static var storyboardType: StoryboardType = .main
     var service = Service()
+    weak var coordinator: MainCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +20,10 @@ class TeamsViewController: UIViewController {
         call()
     }
 
-
+    @IBAction func btn(_ sender: Any) {
+        coordinator?.showPlayer()
+    }
+    
     func call() {
 
 //        service.execute(TeamsEndPoint())
@@ -35,12 +40,12 @@ class TeamsViewController: UIViewController {
 //                print(error)
 //            }
         
-        service.execute(PlayerEndPoint("3"))
-            .done { (result: Player) in
-                print(result)
-            }.catch {(error: Error) in
-                print(error)
-            }
+//        service.execute(PlayerEndPoint("3"))
+//            .done { (result: Player) in
+//                print(result)
+//            }.catch {(error: Error) in
+//                print(error)
+//            }
         
     }
 }

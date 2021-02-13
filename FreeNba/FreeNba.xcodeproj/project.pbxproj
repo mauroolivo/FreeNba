@@ -16,6 +16,12 @@
 		346D303B25D7227A0076059C /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D303A25D7227A0076059C /* ApiConfig.swift */; };
 		346D304125D7244E0076059C /* ResponseTeams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D304025D7244E0076059C /* ResponseTeams.swift */; };
 		346D304B25D7297F0076059C /* ResponsePlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D304A25D7297F0076059C /* ResponsePlayers.swift */; };
+		346D305525D7AD780076059C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D305325D7AD780076059C /* MainCoordinator.swift */; };
+		346D305625D7AD780076059C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D305425D7AD780076059C /* Coordinator.swift */; };
+		346D305D25D7AE080076059C /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D305C25D7AE080076059C /* Storyboardable.swift */; };
+		346D306225D7AE410076059C /* StoryboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D306125D7AE410076059C /* StoryboardType.swift */; };
+		346D306825D7B4490076059C /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D306725D7B4490076059C /* PlayersViewController.swift */; };
+		346D306D25D7B4740076059C /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346D306C25D7B4740076059C /* PlayerViewController.swift */; };
 		34F3259B25D6FB3200E92E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3259A25D6FB3200E92E2D /* AppDelegate.swift */; };
 		34F3259D25D6FB3200E92E2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3259C25D6FB3200E92E2D /* SceneDelegate.swift */; };
 		34F3259F25D6FB3200E92E2D /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3259E25D6FB3200E92E2D /* TeamsViewController.swift */; };
@@ -52,6 +58,12 @@
 		346D303A25D7227A0076059C /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
 		346D304025D7244E0076059C /* ResponseTeams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTeams.swift; sourceTree = "<group>"; };
 		346D304A25D7297F0076059C /* ResponsePlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponsePlayers.swift; sourceTree = "<group>"; };
+		346D305325D7AD780076059C /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		346D305425D7AD780076059C /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		346D305C25D7AE080076059C /* Storyboardable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		346D306125D7AE410076059C /* StoryboardType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardType.swift; sourceTree = "<group>"; };
+		346D306725D7B4490076059C /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		346D306C25D7B4740076059C /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		34F3259725D6FB3200E92E2D /* FreeNba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeNba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F3259A25D6FB3200E92E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34F3259C25D6FB3200E92E2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +142,34 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		346D305225D7AD320076059C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				346D305425D7AD780076059C /* Coordinator.swift */,
+				346D305325D7AD780076059C /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		346D305B25D7ADFB0076059C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				346D305C25D7AE080076059C /* Storyboardable.swift */,
+				346D306125D7AE410076059C /* StoryboardType.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		346D306625D7B41E0076059C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				34F3259E25D6FB3200E92E2D /* TeamsViewController.swift */,
+				346D306725D7B4490076059C /* PlayersViewController.swift */,
+				346D306C25D7B4740076059C /* PlayerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		34F3258E25D6FB3200E92E2D = {
 			isa = PBXGroup;
 			children = (
@@ -153,13 +193,15 @@
 		34F3259925D6FB3200E92E2D /* FreeNba */ = {
 			isa = PBXGroup;
 			children = (
+				346D305B25D7ADFB0076059C /* Utility */,
+				346D305225D7AD320076059C /* Coordinators */,
 				346D302825D721DE0076059C /* Networking */,
 				346D302925D721ED0076059C /* Models */,
 				346D302A25D722040076059C /* Config */,
 				346D302B25D7220C0076059C /* Views */,
+				346D306625D7B41E0076059C /* ViewControllers */,
 				34F3259A25D6FB3200E92E2D /* AppDelegate.swift */,
 				34F3259C25D6FB3200E92E2D /* SceneDelegate.swift */,
-				34F3259E25D6FB3200E92E2D /* TeamsViewController.swift */,
 				34F325A025D6FB3200E92E2D /* Main.storyboard */,
 				34F325A325D6FB3500E92E2D /* Assets.xcassets */,
 				34F325A525D6FB3500E92E2D /* LaunchScreen.storyboard */,
@@ -322,7 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346D306225D7AE410076059C /* StoryboardType.swift in Sources */,
 				346D303425D722430076059C /* Api.swift in Sources */,
+				346D305525D7AD780076059C /* MainCoordinator.swift in Sources */,
+				346D305D25D7AE080076059C /* Storyboardable.swift in Sources */,
+				346D305625D7AD780076059C /* Coordinator.swift in Sources */,
+				346D306825D7B4490076059C /* PlayersViewController.swift in Sources */,
 				346D304125D7244E0076059C /* ResponseTeams.swift in Sources */,
 				34F3259F25D6FB3200E92E2D /* TeamsViewController.swift in Sources */,
 				34F3259B25D6FB3200E92E2D /* AppDelegate.swift in Sources */,
@@ -333,6 +380,7 @@
 				34F3259D25D6FB3200E92E2D /* SceneDelegate.swift in Sources */,
 				346D303525D722430076059C /* Extensions.swift in Sources */,
 				346D303B25D7227A0076059C /* ApiConfig.swift in Sources */,
+				346D306D25D7B4740076059C /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
