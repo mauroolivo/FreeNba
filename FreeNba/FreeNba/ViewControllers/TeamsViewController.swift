@@ -25,12 +25,14 @@ class TeamsViewController: UIViewController, Storyboardable {
     }
     
     func call() {
-        
+        view.showAI()
         service.execute(TeamsEndPoint())
             .done { [weak self] (result: ResponseTeams) in
+                self?.view.hideAI()
                 self?.teams = result.data ?? []
                 self?.tableView.reloadData()
-            }.catch {(error: Error) in
+            }.catch { [weak self] (error: Error) in
+                self?.view.hideAI()
                 print(error)
             }
         

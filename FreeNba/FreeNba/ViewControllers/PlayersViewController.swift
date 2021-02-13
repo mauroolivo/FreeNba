@@ -26,12 +26,14 @@ class PlayersViewController: UIViewController, Storyboardable {
     }
     
     func call() {
-
+        view.showAI()
         service.execute(PlayersEndPoint())
             .done { [weak self] (result: ResponsePlayers) in
+                self?.view.hideAI()
                 self?.players = result.data ?? []
                 self?.tableView.reloadData()
-            }.catch {(error: Error) in
+            }.catch { [weak self] (error: Error) in
+                self?.view.hideAI()
                 print(error)
             }
         

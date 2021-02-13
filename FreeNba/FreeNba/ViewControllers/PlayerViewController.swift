@@ -15,6 +15,7 @@ class PlayerViewController: UIViewController, Storyboardable {
     weak var coordinator: MainCoordinator?
     var playerId: Int?
     var player: Player?
+    @IBOutlet weak var dataView: UIStackView!
     
     
     @IBOutlet weak var lblFirst: UILabel!
@@ -24,7 +25,7 @@ class PlayerViewController: UIViewController, Storyboardable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        dataView.alpha = 0.0
         call()
     }
 
@@ -33,12 +34,16 @@ class PlayerViewController: UIViewController, Storyboardable {
 
         guard let id = playerId else { return }
         
+        view.showAI()
         service.execute(PlayerEndPoint(id))
             .done { [weak self] (result: Player) in
+                self?.view.hideAI()
                 self?.player = result
                 self?.reload()
+                self?.dataView.alpha = 1.0
                 print(result)
-            }.catch {(error: Error) in
+            }.catch { [weak self] (error: Error) in
+                self?.view.hideAI()
                 print(error)
             }
         

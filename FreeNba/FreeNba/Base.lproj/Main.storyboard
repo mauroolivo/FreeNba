@@ -270,6 +270,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="LZr-YJ-8wZ"/>
                     <connections>
+                        <outlet property="dataView" destination="Q6W-GQ-r9N" id="gJ9-GX-4uX"/>
                         <outlet property="lblFirst" destination="A09-ff-vc5" id="Rq3-e8-vH5"/>
                         <outlet property="lblLast" destination="4ks-bD-qJe" id="LQg-hU-Ggh"/>
                         <outlet property="lblPosition" destination="Nz3-Jd-NQj" id="cPG-64-mT8"/>

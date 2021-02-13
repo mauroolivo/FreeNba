@@ -32,6 +32,7 @@
 		34F325B225D6FB3500E92E2D /* FreeNbaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F325B125D6FB3500E92E2D /* FreeNbaTests.swift */; };
 		34F325BD25D6FB3500E92E2D /* FreeNbaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F325BC25D6FB3500E92E2D /* FreeNbaUITests.swift */; };
 		34F5991125D7C2F200093CFC /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F5991025D7C2F200093CFC /* PlayerCell.swift */; };
+		34F5994725D7CFBF00093CFC /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F5994625D7CFBF00093CFC /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		34F325BC25D6FB3500E92E2D /* FreeNbaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNbaUITests.swift; sourceTree = "<group>"; };
 		34F325BE25D6FB3500E92E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34F5991025D7C2F200093CFC /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		34F5994625D7CFBF00093CFC /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				3435070425D7B714004F8E37 /* TeamCell.swift */,
 				34F5991025D7C2F200093CFC /* PlayerCell.swift */,
+				34F5994625D7CFBF00093CFC /* ActivityIndicator.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				346D304B25D7297F0076059C /* ResponsePlayers.swift in Sources */,
 				346D303225D722430076059C /* EndPoint.swift in Sources */,
 				34F3259D25D6FB3200E92E2D /* SceneDelegate.swift in Sources */,
+				34F5994725D7CFBF00093CFC /* ActivityIndicator.swift in Sources */,
 				346D303525D722430076059C /* Extensions.swift in Sources */,
 				346D303B25D7227A0076059C /* ApiConfig.swift in Sources */,
 				346D306D25D7B4740076059C /* PlayerViewController.swift in Sources */,
